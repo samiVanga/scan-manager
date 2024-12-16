@@ -1,0 +1,43 @@
+Doctor’s Report
+
+Patient Name: John Doe
+Date of Birth: January 1, 1980
+Date of Examination: July 16, 2024
+
+Chief Complaint:
+Mr. Doe presents with complaints of persistent lower back pain over the past month. He reports the pain as dull and achy, exacerbated by prolonged sitting and relieved by rest.
+
+History of Present Illness:
+Mr. Doe states that the pain started gradually without any specific injury or trauma. He denies any radiation of pain to the lower extremities or associated numbness or tingling. He has tried over-the-counter pain relievers with minimal relief.
+
+Past Medical History:
+
+	•	Hypertension, controlled with medication
+	•	Seasonal allergies
+	•	Appendectomy in 2005
+
+Medications:
+
+	•	Lisinopril 10 mg daily
+	•	Loratadine 10 mg daily as needed for allergies
+
+Social History:
+Mr. Doe is a non-smoker and denies alcohol or illicit drug use. He works as an office administrator and sits for long periods during the day.
+
+Family History:
+Positive for hypertension in father and maternal grandfather. No history of autoimmune diseases or significant musculoskeletal disorders.
+
+Review of Systems:
+Negative for fever, chills, weight loss, bowel or bladder changes, weakness, or gait disturbances.
+
+Physical Examination:
+
+	•	General: Alert and oriented, cooperative.
+	•	Vital Signs: BP 130/80 mmHg, HR 72 bpm, RR 16/min, Temp 98.6°F.
+	•	HEENT: Pupils equal, round, and reactive to light. Oropharynx clear.
+	•	Neck: Supple, no lymphadenopathy.
+	•	Cardiovascular: Regular rate and rhythm, no murmurs.
+	•	Lungs: Clear to auscultation bilaterally.
+	•	Abdomen: Soft, non-tender, non-distended.
+	•	Musculoskeletal: Normal range of motion of all extremities. Tenderness over the lumbar paraspinal muscles, no sciatic notch tenderness. Negative straight leg raise test.
+	•	Neurologic: Cranial nerves intact, 5/5 strength in all extremities, intact sensation.

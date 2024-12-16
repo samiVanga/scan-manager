@@ -1,0 +1,594 @@
+Magnetic resonance imaging (MRI) is a medical imaging technique used in radiology to form pictures of the anatomy and the physiological processes inside the body. MRI scanners use strong magnetic fields, magnetic field gradients, and radio waves to generate images of the organs in the body. MRI does not involve X-rays or the use of ionizing radiation, which distinguishes it from computed tomography (CT) and positron emission tomography (PET) scans. MRI is a medical application of nuclear magnetic resonance (NMR) which can also be used for imaging in other NMR applications, such as NMR spectroscopy.[1]
+
+MRI is widely used in hospitals and clinics for medical diagnosis, staging and follow-up of disease. Compared to CT, MRI provides better contrast in images of soft tissues, e.g. in the brain or abdomen. However, it may be perceived as less comfortable by patients, due to the usually longer and louder measurements with the subject in a long, confining tube, although "open" MRI designs mostly relieve this. Additionally, implants and other non-removable metal in the body can pose a risk and may exclude some patients from undergoing an MRI examination safely.
+
+MRI was originally called NMRI (nuclear magnetic resonance imaging), but "nuclear" was dropped to avoid negative associations.[2] Certain atomic nuclei are able to absorb radio frequency (RF) energy when placed in an external magnetic field; the resultant evolving spin polarization can induce a RF signal in a radio frequency coil and thereby be detected.[3] In other words, the nuclear magnetic spin of protons in the hydrogen nuclei resonates with the RF incident waves and emit coherent radiation with compact direction, energy (frequency) and phase. This coherent amplified radiation is easily detected by RF antenas close to the subject being examined. It is a process similar to masers. In clinical and research MRI, hydrogen atoms are most often used to generate a macroscopic polarized radiation that is detected by the antennas.[3] Hydrogen atoms are naturally abundant in humans and other biological organisms, particularly in water and fat. For this reason, most MRI scans essentially map the location of water and fat in the body. Pulses of radio waves excite the nuclear spin energy transition, and magnetic field gradients localize the polarization in space. By varying the parameters of the pulse sequence, different contrasts may be generated between tissues based on the relaxation properties of the hydrogen atoms therein.
+
+Since its development in the 1970s and 1980s, MRI has proven to be a versatile imaging technique. While MRI is most prominently used in diagnostic medicine and biomedical research, it also may be used to form images of non-living objects, such as mummies. Diffusion MRI and functional MRI extend the utility of MRI to capture neuronal tracts and blood flow respectively in the nervous system, in addition to detailed spatial images. The sustained increase in demand for MRI within health systems has led to concerns about cost effectiveness and overdiagnosis.
+
+In most medical applications, hydrogen nuclei, which consist solely of a proton, that are in tissues create a signal that is processed to form an image of the body in terms of the density of those nuclei in a specific region. Given that the protons are affected by fields from other atoms to which they are bonded, it is possible to separate responses from hydrogen in specific compounds. To perform a study, the person is positioned within an MRI scanner that forms a strong magnetic field around the area to be imaged. First, energy from an oscillating magnetic field is temporarily applied to the patient at the appropriate resonance frequency. Scanning with X and Y gradient coils causes a selected region of the patient to experience the exact magnetic field required for the energy to be absorbed. The atoms are excited by a RF pulse and the resultant signal is measured by a receiving coil. The RF signal may be processed to deduce position information by looking at the changes in RF level and phase caused by varying the local magnetic field using gradient coils. As these coils are rapidly switched during the excitation and response to perform a moving line scan, they create the characteristic repetitive noise of an MRI scan as the windings move slightly due to magnetostriction. The contrast between different tissues is determined by the rate at which excited atoms return to the equilibrium state. Exogenous contrast agents may be given to the person to make the image clearer.[6]
+
+The major components of an MRI scanner are the main magnet, which polarizes the sample, the shim coils for correcting shifts in the homogeneity of the main magnetic field, the gradient system which is used to localize the region to be scanned and the RF system, which excites the sample and detects the resulting NMR signal. The whole system is controlled by one or more computers.
+
+Each tissue returns to its equilibrium state after excitation by the independent relaxation processes of T1 (spin-lattice; that is, magnetization in the same direction as the static magnetic field) and T2 (spin-spin; transverse to the static magnetic field). To create a T1-weighted image, magnetization is allowed to recover before measuring the MR signal by changing the repetition time (TR). This image weighting is useful for assessing the cerebral cortex, identifying fatty tissue, characterizing focal liver lesions, and in general, obtaining morphological information, as well as for post-contrast imaging. To create a T2-weighted image, magnetization is allowed to decay before measuring the MR signal by changing the echo time (TE). This image weighting is useful for detecting edema and inflammation, revealing white matter lesions, and assessing zonal anatomy in the prostate and uterus.
+
+The information from MRI scans comes in the form of image contrasts based on differences in the rate of relaxation of nuclear spins following their perturbation by an oscillating magnetic field (in the form of radiofrequency pulses through the sample).[18] The relaxation rates are a measure of the time it takes for a signal to decay back to an equilibrium state from either the longitudinal or transverse plane.
+
+Magnetization builds up along the z-axis in the presence of a magnetic field, B0, such that the magnetic dipoles in the sample will, on average, align with the z-axis summing to a total magnetization Mz. This magnetization along z is defined as the equilibrium magnetization; magnetization is defined as the sum of all magnetic dipoles in a sample. Following the equilibrium magnetization, a 90Â° radiofrequency (RF) pulse flips the direction of the magnetization vector in the xy-plane, and is then switched off. The initial magnetic field B0, however, is still applied. Thus, the spin magnetization vector will slowly return from the xy-plane back to the equilibrium state. The time it takes for the magnetization vector to return to its equilibrium value, Mz, is referred to as the longitudinal relaxation time, T1.
+
+Diagnostics
+Usage by organ or system
+
+MRI has a wide range of applications in medical diagnosis and around 50,000 scanners are estimated to be in use worldwide.[24] MRI affects diagnosis and treatment in many specialties although the effect on improved health outcomes is disputed in certain cases.[25][26]
+
+MRI is the investigation of choice in the preoperative staging of rectal and prostate cancer and has a role in the diagnosis, staging, and follow-up of other tumors,[27] as well as for determining areas of tissue for sampling in biobanking
+
+MRI is the investigative tool of choice for neurological cancers over CT, as it offers better visualization of the posterior cranial fossa, containing the brainstem and the cerebellum. The contrast provided between grey and white matter makes MRI the best choice for many conditions of the central nervous system, including demyelinating diseases, dementia, cerebrovascular disease, infectious diseases, Alzheimer's disease and epilepsy.[30][31][32] Since many images are taken milliseconds apart, it shows how the brain responds to different stimuli, enabling researchers to study both the functional and structural brain abnormalities in psychological disorders.[33] MRI also is used in guided stereotactic surgery and radiosurgery for treatment of intracranial tumors, arteriovenous malformations, and other surgically treatable conditions using a device known as the N-localizer.[34][35][36] New tools that implement artificial intelligence in healthcare have demonstrated higher image quality and morphometric analysis in neuroimaging with the application of a denoising system.[37]
+
+The record for the highest spatial resolution of a whole intact brain (postmortem) is 100 microns, from Massachusetts General Hospital. The data was published in NATURE on 30 October 2019.[38][39]
+
+Though MRI is used widely in research on mental disabilities, based on a 2024 systematic literature review and meta analysis commissioned by the Patient-Centered Outcomes Research Institute (PCORI), available research using MRI scans to diagnose ADHD showed great variability [40]. The authors conclude that MRI cannot be reliably used to assist in making a clinical diagnosis of ADHD 
+
+Cardiovascular
+Main article: Cardiac magnetic resonance imaging
+
+MR angiogram in congenital heart disease
+Cardiac MRI is complementary to other imaging techniques, such as echocardiography, cardiac CT, and nuclear medicine. It can be used to assess the structure and the function of the heart.[41] Its applications include assessment of myocardial ischemia and viability, cardiomyopathies, myocarditis, iron overload, vascular diseases, and congenital heart disease.[42]
+
+Musculoskeletal
+Main article: Spinal fMRI
+Applications in the musculoskeletal system include spinal imaging, assessment of joint disease, and soft tissue tumors.[43] Also, MRI techniques can be used for diagnostic imaging of systemic muscle diseases including genetic muscle diseases.[44][45]
+
+Swallowing movement of throat and oesophagus can cause motion artifact over the imaged spine. Therefore, a saturation pulse[clarification needed] applied over this region the throat and oesophagus can help to avoid this artifact. Motion artifact arising due to pumping of the heart can be reduced by timing the MRI pulse according to heart cycles.[46] Blood vessels flow artifacts can be reduced by applying saturation pulses above and below the region of interest.[47]
+
+Liver and gastrointestinal
+Hepatobiliary MR is used to detect and characterize lesions of the liver, pancreas, and bile ducts. Focal or diffuse disorders of the liver may be evaluated using diffusion-weighted, opposed-phase imaging and dynamic contrast enhancement sequences. Extracellular contrast agents are used widely in liver MRI, and newer hepatobiliary contrast agents also provide the opportunity to perform functional biliary imaging. Anatomical imaging of the bile ducts is achieved by using a heavily T2-weighted sequence in magnetic resonance cholangiopancreatography (MRCP). Functional imaging of the pancreas is performed following administration of secretin. MR enterography provides non-invasive assessment of inflammatory bowel disease and small bowel tumors. MR-colonography may play a role in the detection of large polyps in patients at increased risk of colorectal cancer.[48][49][50][51]
+
+Angiography
+
+Magnetic resonance angiography
+Main article: Magnetic resonance angiography
+Magnetic resonance angiography (MRA) generates pictures of the arteries to evaluate them for stenosis (abnormal narrowing) or aneurysms (vessel wall dilatations, at risk of rupture). MRA is often used to evaluate the arteries of the neck and brain, the thoracic and abdominal aorta, the renal arteries, and the legs (called a "run-off"). A variety of techniques can be used to generate the pictures, such as administration of a paramagnetic contrast agent (gadolinium) or using a technique known as "flow-related enhancement" (e.g., 2D and 3D time-of-flight sequences), where most of the signal on an image is due to blood that recently moved into that plane (see also FLASH MRI).[52]
+
+Techniques involving phase accumulation (known as phase contrast angiography) can also be used to generate flow velocity maps easily and accurately. Magnetic resonance venography (MRV) is a similar procedure that is used to image veins. In this method, the tissue is now excited inferiorly, while the signal is gathered in the plane immediately superior to the excitation planeâ€”thus imaging the venous blood that recently moved from the excited plane.
+
+Contrast agents
+Main article: MRI contrast agent
+MRI for imaging anatomical structures or blood flow do not require contrast agents since the varying properties of the tissues or blood provide natural contrasts. However, for more specific types of imaging, exogenous contrast agents may be given intravenously, orally, or intra-articularly.[6] Most contrast agents are either paramagnetic (e.g.: gadolinium, manganese, europium), and are used to shorten T1 in the tissue they accumulate in, or super-paramagnetic (SPIONs), and are used to shorten T2 and T2* in healthy tissue reducing its signal intensity (negative contrast agents). The most commonly used intravenous contrast agents are based on chelates of gadolinium, which is highly paramagnetic.[54] In general, these agents have proved safer than the iodinated contrast agents used in X-ray radiography or CT. Anaphylactoid reactions are rare, occurring in approx. 0.03â€“0.1%.[55] Of particular interest is the lower incidence of nephrotoxicity, compared with iodinated agents, when given at usual dosesâ€”this has made contrast-enhanced MRI scanning an option for patients with renal impairment, who would otherwise not be able to undergo contrast-enhanced CT.[56]
+
+Gadolinium-based contrast reagents are typically octadentate complexes of gadolinium(III). The complex is very stable (log K > 20) so that, in use, the concentration of the un-complexed Gd3+ ions should be below the toxicity limit. The 9th place in the metal ion's coordination sphere is occupied by a water molecule which exchanges rapidly with water molecules in the reagent molecule's immediate environment, affecting the magnetic resonance relaxation time.[57]
+
+In December 2017, the Food and Drug Administration (FDA) in the United States announced in a drug safety communication that new warnings were to be included on all gadolinium-based contrast agents (GBCAs). The FDA also called for increased patient education and requiring gadolinium contrast vendors to conduct additional animal and clinical studies to assess the safety of these agents.[58] Although gadolinium agents have proved useful for patients with kidney impairment, in patients with severe kidney failure requiring dialysis there is a risk of a rare but serious illness, nephrogenic systemic fibrosis, which may be linked to the use of certain gadolinium-containing agents. The most frequently linked is gadodiamide, but other agents have been linked too.[59] Although a causal link has not been definitively established, current guidelines in the United States are that dialysis patients should only receive gadolinium agents where essential and that dialysis should be performed as soon as possible after the scan to remove the agent from the body promptly.[60][61]
+
+In Europe, where more gadolinium-containing agents are available, a classification of agents according to potential risks has been released.[62][63] In 2008, a new contrast agent named gadoxetate, brand name Eovist (US) or Primovist (EU), was approved for diagnostic use: This has the theoretical benefit of a dual excretion path.
+
+Specialized configurations
+Magnetic resonance spectroscopy
+Main articles: In vivo magnetic resonance spectroscopy and Nuclear magnetic resonance spectroscopy
+Magnetic resonance spectroscopy (MRS) is used to measure the levels of different metabolites in body tissues, which can be achieved through a variety of single voxel or imaging-based techniques.[95] The MR signal produces a spectrum of resonances that corresponds to different molecular arrangements of the isotope being "excited". This signature is used to diagnose certain metabolic disorders, especially those affecting the brain,[96] and to provide information on tumor metabolism.[97]
+
+Magnetic resonance spectroscopic imaging (MRSI) combines both spectroscopic and imaging methods to produce spatially localized spectra from within the sample or patient. The spatial resolution is much lower (limited by the available SNR), but the spectra in each voxel contains information about many metabolites. Because the available signal is used to encode spatial and spectral information, MRSI requires high SNR achievable only at higher field strengths (3 T and above).[98] The high procurement and maintenance costs of MRI with extremely high field strengths[99] inhibit their popularity. However, recent compressed sensing-based software algorithms (e.g., SAMV[100]) have been proposed to achieve super-resolution without requiring such high field strengths.
+
+Real-time
+Duration: 16 seconds.0:16Subtitles available.CC
+Real-time MRI of a human heart at a resolution of 50 ms
+This section is an excerpt from Real-time MRI.[edit]
+Duration: 8 seconds.0:08
+Real-time MRI of a human heart (2-chamber view) at 22 ms resolution[101]
+Duration: 36 seconds.0:36
+Real-time MRI of a vocal tract while singing, at 40 ms resolution
+Real-time magnetic resonance imaging (RT-MRI) refers to the continuous monitoring of moving objects in real time. Traditionally, real-time MRI was possible only with low image quality or low temporal resolution. An iterative reconstruction algorithm removed limitations. Radial FLASH MRI (real-time) yields a temporal resolution of 20 to 30 milliseconds for images with an in-plane resolution of 1.5 to 2.0 mm.[102] Real-time MRI adds information about diseases of the joints and the heart. In many cases MRI examinations become easier and more comfortable for patients, especially for the patients who cannot calm their breathing[103] or who have arrhythmia.
+
+Balanced steady-state free precession (bSSFP) imaging gives better image contrast between the blood pool and myocardium than FLASH MRI, at the cost of severe banding artifact when B0 inhomogeneity is strong.[103]
+Interventional MRI
+Main article: Interventional magnetic resonance imaging
+The lack of harmful effects on the patient and the operator make MRI well-suited for interventional radiology, where the images produced by an MRI scanner guide minimally invasive procedures. Such procedures use no ferromagnetic instruments.[104]
+
+A specialized growing subset of interventional MRI is intraoperative MRI, in which an MRI is used in surgery. Some specialized MRI systems allow imaging concurrent with the surgical procedure. More typically, the surgical procedure is temporarily interrupted so that MRI can assess the success of the procedure or guide subsequent surgical work.[105]
+
+Magnetic resonance guided focused ultrasound
+In guided therapy, high-intensity focused ultrasound (HIFU) beams are focused on a tissue, that are controlled using MR thermal imaging. Due to the high energy at the focus, the temperature rises to above 65 Â°C (150 Â°F) which completely destroys the tissue. This technology can achieve precise ablation of diseased tissue. MR imaging provides a three-dimensional view of the target tissue, allowing for the precise focusing of ultrasound energy. The MR imaging provides quantitative, real-time, thermal images of the treated area. This allows the physician to ensure that the temperature generated during each cycle of ultrasound energy is sufficient to cause thermal ablation within the desired tissue and if not, to adapt the parameters to ensure effective treatment.[106]
+
+Multinuclear imaging
+See also: Helium-3 Â§ Medical imaging
+Hydrogen has the most frequently imaged nucleus in MRI because it is present in biological tissues in great abundance, and because its high gyromagnetic ratio gives a strong signal. However, any nucleus with a net nuclear spin could potentially be imaged with MRI. Such nuclei include helium-3, lithium-7, carbon-13, fluorine-19, oxygen-17, sodium-23, phosphorus-31 and xenon-129. 23Na and 31P are naturally abundant in the body, so they can be imaged directly. Gaseous isotopes such as 3He or 129Xe must be hyperpolarized and then inhaled as their nuclear density is too low to yield a useful signal under normal conditions. 17O and 19F can be administered in sufficient quantities in liquid form (e.g. 17O-water) that hyperpolarization is not a necessity.[107] Using helium or xenon has the advantage of reduced background noise, and therefore increased contrast for the image itself, because these elements are not normally present in biological tissues.[108]
+
+Moreover, the nucleus of any atom that has a net nuclear spin and that is bonded to a hydrogen atom could potentially be imaged via heteronuclear magnetization transfer MRI that would image the high-gyromagnetic-ratio hydrogen nucleus instead of the low-gyromagnetic-ratio nucleus that is bonded to the hydrogen atom.[109] In principle, heteronuclear magnetization transfer MRI could be used to detect the presence or absence of specific chemical bonds.[110][111]
+
+Multinuclear imaging is primarily a research technique at present. However, potential applications include functional imaging and imaging of organs poorly seen on 1H MRI (e.g., lungs and bones) or as alternative contrast agents. Inhaled hyperpolarized 3He can be used to image the distribution of air spaces within the lungs. Injectable solutions containing 13C or stabilized bubbles of hyperpolarized 129Xe have been studied as contrast agents for angiography and perfusion imaging. 31P can potentially provide information on bone density and structure, as well as functional imaging of the brain. Multinuclear imaging holds the potential to chart the distribution of lithium in the human brain, this element finding use as an important drug for those with conditions such as bipolar disorder.[112]
+
+Molecular imaging by MRI
+Main article: Molecular imaging
+MRI has the advantages of having very high spatial resolution and is very adept at morphological imaging and functional imaging. MRI does have several disadvantages though. First, MRI has a sensitivity of around 10âˆ’3 mol/L to 10âˆ’5 mol/L, which, compared to other types of imaging, can be very limiting. This problem stems from the fact that the population difference between the nuclear spin states is very small at room temperature. For example, at 1.5 teslas, a typical field strength for clinical MRI, the difference between high and low energy states is approximately 9 molecules per 2 million. Improvements to increase MR sensitivity include increasing magnetic field strength and hyperpolarization via optical pumping or dynamic nuclear polarization. There are also a variety of signal amplification schemes based on chemical exchange that increase sensitivity.[113]
+
+To achieve molecular imaging of disease biomarkers using MRI, targeted MRI contrast agents with high specificity and high relaxivity (sensitivity) are required. To date, many studies have been devoted to developing targeted-MRI contrast agents to achieve molecular imaging by MRI. Commonly, peptides, antibodies, or small ligands, and small protein domains, such as HER-2 affibodies, have been applied to achieve targeting. To enhance the sensitivity of the contrast agents, these targeting moieties are usually linked to high payload MRI contrast agents or MRI contrast agents with high relaxivities.[114] A new class of gene targeting MR contrast agents has been introduced to show gene action of unique mRNA and gene transcription factor proteins.[115][116] These new contrast agents can trace cells with unique mRNA, microRNA and virus; tissue response to inflammation in living brains.[117] The MR reports change in gene expression with positive correlation to TaqMan analysis, optical and electron microscopy.[118]
+
+Parallel MRI
+It takes time to gather MRI data using sequential applications of magnetic field gradients. Even for the most streamlined of MRI sequences, there are physical and physiologic limits to the rate of gradient switching. Parallel MRI circumvents these limits by gathering some portion of the data simultaneously, rather than in a traditional sequential fashion. This is accomplished using arrays of radiofrequency (RF) detector coils, each with a different 'view' of the body. A reduced set of gradient steps is applied, and the remaining spatial information is filled in by combining signals from various coils, based on their known spatial sensitivity patterns. The resulting acceleration is limited by the number of coils and by the signal to noise ratio (which decreases with increasing acceleration), but two- to four-fold accelerations may commonly be achieved with suitable coil array configurations, and substantially higher accelerations have been demonstrated with specialized coil arrays. Parallel MRI may be used with most MRI sequences.
+
+After a number of early suggestions for using arrays of detectors to accelerate imaging went largely unremarked in the MRI field, parallel imaging saw widespread development and application following the introduction of the SiMultaneous Acquisition of Spatial Harmonics (SMASH) technique in 1996â€“7.[119] The SENSitivity Encoding (SENSE)[120] and Generalized Autocalibrating Partially Parallel Acquisitions (GRAPPA)[121] techniques are the parallel imaging methods in most common use today. The advent of parallel MRI resulted in extensive research and development in image reconstruction and RF coil design, as well as in a rapid expansion of the number of receiver channels available on commercial MR systems. Parallel MRI is now used routinely for MRI examinations in a wide range of body areas and clinical or research applications.
+
+Quantitative MRI
+Most MRI focuses on qualitative interpretation of MR data by acquiring spatial maps of relative variations in signal strength which are "weighted" by certain parameters.[122] Quantitative methods instead attempt to determine spatial maps of accurate tissue relaxometry parameter values or magnetic field, or to measure the size of certain spatial features.
+
+Examples of quantitative MRI methods are:
+
+T1-mapping (notably used in cardiac magnetic resonance imaging[123])
+T2-mapping[124]
+Quantitative susceptibility mapping (QSM)
+Quantitative fluid flow MRI (i.e. some cerebrospinal fluid flow MRI[125])
+Magnetic resonance elastography (MRE)[126]
+Quantitative MRI aims to increase the reproducibility of MR images and interpretations, but has historically require longer scan times.[122]
+
+Quantitative MRI (or qMRI) sometimes more specifically refers to multi-parametric quantitative MRI, the mapping of multiple tissue relaxometry parameters in a single imaging session.[127] Efforts to make multi-parametric quantitative MRI faster have produced sequences which map multiple parameters simultaneously, either by building separate encoding methods for each parameter into the sequence,[128] or by fitting MR signal evolution to a multi-parameter model.[129][130]
+
+Hyperpolarized gas MRI
+Main article: Hyperpolarized gas MRI
+Traditional MRI generates poor images of lung tissue because there are fewer water molecules with protons that can be excited by the magnetic field. Using hyperpolarized gas an MRI scan can identify ventilation defects in the lungs. Before the scan, a patient is asked to inhale hyperpolarized xenon mixed with a buffer gas of helium or nitrogen. The resulting lung images are much higher quality than with traditional MRI.
+
+Safety
+Main article: Safety of magnetic resonance imaging
+MRI is, in general, a safe technique, although injuries may occur as a result of failed safety procedures or human error.[131] Contraindications to MRI include most cochlear implants and cardiac pacemakers, shrapnel, and metallic foreign bodies in the eyes. Magnetic resonance imaging in pregnancy appears to be safe, at least during the second and third trimesters if done without contrast agents.[132] Since MRI does not use any ionizing radiation, its use is generally favored in preference to CT when either modality could yield the same information.[133] Some patients experience claustrophobia and may require sedation or shorter MRI protocols.[134][135] Amplitude and rapid switching of gradient coils during image acquisition may cause peripheral nerve stimulation.[136]
+
+MRI uses powerful magnets and can therefore cause magnetic materials to move at great speeds, posing a projectile risk, and may cause fatal accidents.[137] However, as millions of MRIs are performed globally each year,[138] fatalities are extremely rare.[139]
+
+MRI machines can produce loud noise, up to 120 dB(A).[140] This can cause hearing loss, tinnitus and hyperacusis, so appropriate hearing protection is essential for anyone inside the MRI scanner room during the examination.
+
+Overuse
+See also: Overdiagnosis
+Medical societies issue guidelines for when physicians should use MRI on patients and recommend against overuse. MRI can detect health problems or confirm a diagnosis, but medical societies often recommend that MRI not be the first procedure for creating a plan to diagnose or manage a patient's complaint. A common case is to use MRI to seek a cause of low back pain; the American College of Physicians, for example, recommends against imaging (including MRI) as unlikely to result in a positive outcome for the patient.[25][26]
+
+Artifacts
+Main article: MRI artifact
+
+Motion artifact (T1 coronal study of cervical vertebrae)[141]
+An MRI artifact is a visual artifact, that is, an anomaly during visual representation. Many different artifacts can occur during magnetic resonance imaging (MRI), some affecting the diagnostic quality, while others may be confused with pathology. Artifacts can be classified as patient-related, signal processing-dependent and hardware (machine)-related.[141]
+
+Non-medical use
+Main article: Nuclear magnetic resonance Â§ Applications
+MRI is used industrially mainly for routine analysis of chemicals. The nuclear magnetic resonance technique is also used, for example, to measure the ratio between water and fat in foods, monitoring of flow of corrosive fluids in pipes, or to study molecular structures such as catalysts.[1]
+
+Being non-invasive and non-damaging, MRI can be used to study the anatomy of plants, their water transportation processes and water balance.[142] It is also applied to veterinary radiology for diagnostic purposes. Outside this, its use in zoology is limited due to the high cost; but it can be used on many species.[143]
+
+In palaeontology it is used to examine the structure of fossils.[144]
+
+Forensic imaging provides graphic documentation of an autopsy, which manual autopsy does not. CT scanning provides quick whole-body imaging of skeletal and parenchymal alterations, whereas MR imaging gives better representation of soft tissue pathology.[145] All that being said, MRI is more expensive, and more time-consuming to utilize.[145] Moreover, the quality of MR imaging deteriorates below 10 Â°C.[146]
+
+History
+Main article: History of magnetic resonance imaging
+In 1971 at Stony Brook University, Paul Lauterbur applied magnetic field gradients in all three dimensions and a back-projection technique to create NMR images. He published the first images of two tubes of water in 1973 in the journal Nature,[147] followed by the picture of a living animal, a clam, and in 1974 by the image of the thoracic cavity of a mouse. Lauterbur called his imaging method zeugmatography, a term which was replaced by (N)MR imaging.[1] In the late 1970s, physicists Peter Mansfield and Paul Lauterbur developed MRI-related techniques, like the echo-planar imaging (EPI) technique.[148]
+
+Raymond Damadianâ€™s work into nuclear magnetic resonance (NMR) has been incorporated into MRI, having built one of the first scanners.[149]
+
+Advances in semiconductor technology were crucial to the development of practical MRI, which requires a large amount of computational power. This was made possible by the rapidly increasing number of transistors on a single integrated circuit chip.[150] Mansfield and Lauterbur were awarded the 2003 Nobel Prize in Physiology or Medicine for their "discoveries concerning magnetic resonance imaging
+
+MRIs employ powerful magnets which produce a strong magnetic field that forces protons in the body to align with that field. When a radiofrequency current is then pulsed through the patient, the protons are stimulated, and spin out of equilibrium, straining against the pull of the magnetic field. When the radiofrequency field is turned off, the MRI sensors are able to detect the energy released as the protons realign with the magnetic field. The time it takes for the protons to realign with the magnetic field, as well as the amount of energy released, changes depending on the environment and the chemical nature of the molecules. Physicians are able to tell the difference between various types of tissues based on these magnetic properties.
+
+To obtain an MRI image, a patient is placed inside a large magnet and must remain very still during the imaging process in order not to blur the image. Contrast agents (often containing the element Gadolinium) may be given to a patient intravenously before or during the MRI to increase the speed at which protons realign with the magnetic field. The faster the protons realign, the brighter the image.
+
+What is MRI used for?
+MRI scanners are particularly well suited to image the non-bony parts or soft tissues of the body. They differ from computed tomography (CT), in that they do not use the damaging ionizing radiation of x-rays. The brain, spinal cord and nerves, as well as muscles, ligaments, and tendons are seen much more clearly with MRI than with regular x-rays and CT; for this reason MRI is often used to image knee and shoulder injuries.
+
+In the brain, MRI can differentiate between white matter and grey matter and can also be used to diagnose aneurysms and tumors. Because MRI does not use x-rays or other radiation, it is the imaging modality of choice when frequent imaging is required for diagnosis or therapy, especially in the brain. However, MRI is more expensive than x-ray imaging or CT scanning.
+
+One kind of specialized MRI is functional Magnetic Resonance Imaging (fMRI.) This is used to observe brain structures and determine which areas of the brain â€œactivateâ€ (consume more oxygen) during various cognitive tasks. It is used to advance the understanding of brain organization and offers a potential new standard for assessing neurological status and neurosurgical risk.
+
+Are there risks?
+Although MRI does not emit the ionizing radiation that is found in x-ray and CT imaging, it does employ a strong magnetic field. The magnetic field extends beyond the machine and exerts very powerful forces on objects of iron, some steels, and other magnetizable objects; it is strong enough to fling a wheelchair across the room. Patients should notify their physicians of any form of medical or implant prior to an MR scan.
+
+When having an MRI scan, the following should be taken into consideration:
+
+MRI image of the upper body and head of a person
+People with implants, particularly those containing iron, â€” pacemakers, vagus nerve stimulators, implantable cardioverter- defibrillators, loop recorders, insulin pumps, cochlear implants, deep brain stimulators, and capsules from capsule endoscopy should not enter an MRI machine.
+Noiseâ€”loud noise commonly referred to as clicking and beeping, as well as sound intensity up to 120 decibels in certain MR scanners, may require special ear protection.
+Nerve Stimulationâ€”a twitching sensation sometimes results from the rapidly switched fields in the MRI.
+Contrast agentsâ€”patients with severe renal failure who require dialysis may risk a rare but serious illness called nephrogenic systemic fibrosis that may be linked to the use of certain gadolinium-containing agents, such as gadodiamide and others. Although a causal link has not been established, current guidelines in the United States recommend that dialysis patients should only receive gadolinium agents when essential, and that dialysis should be performed as soon as possible after the scan to remove the agent from the body promptly.
+Pregnancyâ€”while no effects have been demonstrated on the fetus, it is recommended that MRI scans be avoided as a precaution especially in the first trimester of pregnancy when the fetusâ€™ organs are being formed and contrast agents, if used, could enter the fetal bloodstream.
+Photo of an open MRI machine
+New open MRI machine
+Claustrophobiaâ€”people with even mild claustrophobia may find it difficult to tolerate long scan times inside the machine. Familiarization with the machine and process, as well as visualization techniques, sedation, and anesthesia provide patients with mechanisms to overcome their discomfort. Additional coping mechanisms include listening to music or watching a video or movie, closing or covering the eyes, and holding a panic button. The open MRI is a machine that is open on the sides rather than a tube closed at one end, so it does not fully surround the patient. It was developed to accommodate the needs of patients who are uncomfortable with the narrow tunnel and noises of the traditional MRI and for patients whose size or weight make the traditional MRI impractical. Newer open MRI technology provides high quality images for many but not all types of examinations.
+What are examples of NIBIB-funded projects in MRI?
+Replacing Biopsies with Sound
+Chronic liver disease and cirrhosis affect more than 5.5 million people in the United States. NIBIB-funded researchers have developed a method to turn sound waves into images of the liver, which provides a new non-invasive, pain-free approach to find tumors or tissue damaged by liver disease. The Magnetic Resonance Elastography (MRE) device is placed over the liver of the patient before he enters the MRI machine. It then pulses sound waves through the liver, which the MRI is able to detect and use to determine the density and health of the liver tissue. This technique is safer and more comfortable for the patient as well as being less expensive than a traditional biopsy. Since MRE is able to recognize very slight differences in tissue density, there is the potential that it could also be used to detect cancer.
+
+New MRI just for Kids
+MRI is potentially one of the best imaging modalities for children since unlike CT, it does not have any ionizing radiation that could potentially be harmful. However, one of the most difficult challenges that MRI technicians face is obtaining a clear image, especially when the patient is a child or has some kind of ailment that prevents them from staying still for extended periods of time. As a result, many young children require anesthesia, which increases the health risk for the patient. NIBIB is funding research that is attempting to develop a robust pediatric body MRI. By creating a pediatric coil made specifically for smaller bodies, the image can be rendered more clearly and quickly and will demand less MR operator skill. This will make MRIs cheaper, safer, and more available to children. The faster imaging and motion compensation could also potentially benefit adult patients as well.
+
+Another NIBIB-funded researcher is trying to solve this problem from a different angle. He is developing a motion correction system that could greatly improve image quality for MR exams. Researchers are developing an optical tracking system that would be able to match and adapt the MRI pulses to changes in the patientâ€™s pose in real time. This improvement could reduce cost (since less repeat MR exams will have to take place due to poor quality) as well as make MRI a viable option for many patients who are unable to remain still for the exam and reduce the amount of anesthesia used for MR exams.
+
+Determining the aggressiveness of a tumor
+Traditional MRI, unlike PET or SPECT, cannot measure metabolic rates. However, researchers funded by NIBIB have discovered a way to inject specialized compounds (hyperpolarized carbon 13) into prostate cancer patients to measure the metabolic rate of a tumor. This information can provide a fast and accurate picture of the tumorâ€™s aggressiveness. Monitoring disease progression can improve risk prediction, which is critical for prostate cancer patients who often adopt a wait and watch approach.
+
+Magnetic Resonance Imaging (MRI) is a powerful medical imaging technique that uses strong magnetic fields and radio waves to create detailed pictures of organs, soft tissues, bones, and other internal structures within the body. Unlike X-rays and CT scans that utilize radiation, MRIs are completely safe and painless, making them a preferred diagnostic tool for a wide range of medical conditions.
+
+How Does an MRI Work?
+
+An MRI scanner is a large, tube-shaped machine with a powerful magnet at its center. When a patient lies inside the scanner, the magnetic field aligns the protons (tiny particles within the body's atoms) in a specific direction. Radio waves are then pulsed through the body, causing these aligned protons to absorb energy. Once the radio waves stop, the protons release the absorbed energy at varying rates depending on the type of tissue they reside in. These signal variations are detected by the MRI machine and used by a computer to construct detailed cross-sectional images of the body.
+
+What Can MRIs Be Used For?
+
+MRIs offer a versatile diagnostic tool for a multitude of conditions. Here are some of the most common applications:
+
+Musculoskeletal System: Examining muscles, ligaments, tendons, bones, and bone marrow for abnormalities such as tears, fractures, tumors, and inflammation (arthritis).
+Brain and Nervous System: Detecting abnormalities like tumors, strokes, multiple sclerosis, and epilepsy by visualizing the brain, spinal cord, and nerves.
+Cardiovascular System: Assessing the heart's structure and function, identifying blockages in blood vessels, and evaluating potential heart damage.
+Cancer Detection: Identifying and staging tumors in various organs throughout the body.
+Abdomen and Pelvis: Examining organs like the liver, kidneys, uterus, ovaries, and prostate for abnormalities, masses, or signs of inflammation.
+MRI with Contrast Dye:
+
+In some cases, a contrast dye may be injected intravenously during an MRI scan. This dye helps to highlight specific tissues or blood vessels, making them appear brighter in the resulting images and improving the visibility of certain abnormalities. Contrast dyes are generally safe, but some patients may experience side effects like nausea, headache, or allergic reactions.
+
+What to Expect During an MRI Scan:
+
+An MRI scan is typically an outpatient procedure. Here's a general overview of what to expect:
+
+Preparation: You will be asked to remove any metal objects (jewelry, piercings) that could interfere with the magnetic field. You may also be screened for claustrophobia as the enclosed space of the scanner can be uncomfortable for some patients.
+During the Scan: You will lie down on a movable exam table that slides into the scanner. Depending on the area being examined, you may need to remain still for 15 to 90 minutes. The scanner will produce loud knocking noises during operation, and earplugs or headphones are often provided to reduce discomfort.
+After the Scan: Following the scan, you can typically resume your normal activities. The radiologist, a doctor specializing in interpreting medical images, will analyze the MRI and provide a report to your physician.
+Benefits of MRIs:
+
+Non-invasive and painless: MRIs do not involve radiation exposure or needles, making them a safe and comfortable diagnostic tool.
+Detailed Images: MRIs produce high-resolution images of soft tissues and bones, allowing for a more comprehensive examination compared to X-rays or CT scans.
+Versatility: MRIs can be used to diagnose a wide range of medical conditions across various body parts.
+Limitations of MRIs:
+
+Cost: MRIs can be expensive compared to other imaging techniques.
+Time: MRI scans can take longer than X-rays or CT scans.
+Claustrophobia: The enclosed space of the scanner can be uncomfortable for patients with claustrophobia.
+Metal Implants: People with certain metal implants or claustrophobic may not be suitable candidates for MRI scans.
+Safety Considerations:
+
+While MRIs are generally safe, there are some safety considerations:
+
+Metallic Objects: Metallic objects like implants, jewelry, and piercings can become dislodged or heated due to the strong magnetic field.
+Pregnancy: The safety of MRIs during pregnancy is not fully established, and scans are typically avoided unless absolutely necessary.
+Claustrophobia: If you have claustrophobia, discuss sedation options with your doctor to help manage anxiety during the scan.
+Conclusion
+
+MRI scans are a valuable diagnostic tool offering a safe and detailed view of the body's interior. If your doctor recommends an MRI,  discuss any concerns you may have about the procedure beforehand. They can address your specific questions and explain how an MRI can benefit your diagnosis.
+
+Deep Dive into MRI Detection Capabilities: Decoding the Details
+An MRI's strength lies in its ability to visualize soft tissues and bones with exceptional detail. This allows doctors to detect a wide range of abnormalities across various body systems. Here's a breakdown of some of the specific conditions MRIs can identify:
+
+Musculoskeletal System:
+
+Tears and Sprains: MRIs excel at revealing tears in ligaments, tendons, and muscles, which can be challenging to diagnose with X-rays.
+Joint Injuries: MRI scans can pinpoint damage to cartilage, menisci (cushioning pads in the knee), and identify abnormalities within the joint capsule.
+Bone Fractures: While X-rays are often the first line of investigation for fractures, MRIs can detect complex fractures, hairline cracks, and bone marrow injuries.
+Bone Tumors: MRIs can identify bone tumors by revealing differences in tissue density and blood flow compared to healthy bone.
+Inflammatory Conditions: MRIs can detect inflammation associated with conditions like arthritis, bursitis, and tendinitis by showing swelling and fluid buildup in the affected areas.
+Brain and Nervous System:
+
+Brain Tumors: MRIs are highly effective in detecting brain tumors due to their ability to differentiate between healthy and abnormal tissue growth.
+Stroke: MRIs can identify strokes by revealing areas of bleeding, swelling, or damage within the brain tissue.
+Multiple Sclerosis (MS): MRIs can detect the characteristic plaques of demyelination (scarring) in the brain and spinal cord associated with MS.
+Epilepsy: MRIs can help identify abnormalities in the brain structure that might be contributing to epileptic seizures.
+Head Injuries: MRIs can detect internal bleeding, swelling, and damage to brain tissue following head injuries.
+Spinal Cord Injuries: MRIs can visualize injuries to the spinal cord, including herniated discs, nerve compression, and inflammation.
+Cardiovascular System:
+
+Heart Defects: MRIs can reveal structural abnormalities of the heart, such as congenital heart defects, enlarged heart chambers, and weakened heart valves.
+Coronary Artery Disease: While not a direct method for detecting blockages, MRIs can identify damage to the heart muscle caused by inadequate blood flow due to coronary artery disease.
+Aortic Dissection: MRIs can detect tears or dissections in the aorta, the main artery carrying blood away from the heart.
+Cancer Detection:
+
+MRIs play a crucial role in cancer diagnosis by:
+
+Identifying Tumors: MRIs can detect tumors in various organs throughout the body, including the liver, kidneys, pancreas, ovaries, uterus, and prostate.
+Staging Cancer: MRIs help determine the extent of cancer spread by revealing the size, location, and involvement of nearby lymph nodes.
+Monitoring Treatment: MRIs can be used to monitor the effectiveness of cancer treatment by tracking tumor size and response to therapy.
+Abdomen and Pelvis:
+
+Liver Disease: MRIs can detect abnormalities like cirrhosis, fatty liver disease, and liver tumors.
+Kidney Disease: MRIs can identify problems like cysts, tumors, and blockages in the urinary tract.
+Uterine Abnormalities: MRIs can detect fibroids, endometriosis, and other conditions affecting the uterus.
+Ovarian Cysts and Tumors: MRIs can differentiate between benign and malignant ovarian masses.
+Pelvic Inflammatory Disease (PID): MRIs can detect inflammation and scarring in the fallopian tubes and ovaries associated with PID.
+Other Uses:
+
+Vascular Abnormalities: MRIs can identify abnormal blood vessel formations, such as arteriovenous malformations (AVMs)
+Ear and Inner Ear Disorders: MRIs can detect inner ear problems like Meniere's disease and tumors of the auditory nerve.
+Important Note: This list is not exhaustive, and the specific abnormalities detectable will depend on the type of MRI scan performed and the area being examined.  Your doctor will be able to explain the most relevant findings for your individual case.
+
+1. Introduction
+Magnetic Resonance Imaging (MRI) is a non-invasive medical imaging technique used to produce detailed three-dimensional images of the body's internal structures. It has revolutionized medical diagnostics by providing high-resolution images of soft tissues without the use of ionizing radiation. This report aims to provide a comprehensive overview of MRI technology, its applications, interpretation methods, associated risks, and the science behind its operation.
+2. Historical Background
+The foundations of MRI technology can be traced back to the discovery of Nuclear Magnetic Resonance (NMR) in the 1930s. Key milestones include:
+
+1938: Isidor Rabi observes nuclear magnetic resonance in molecular beams
+1946: Felix Bloch and Edward Purcell independently demonstrate NMR in liquids and solids
+1971: Raymond Damadian shows that NMR can distinguish between normal and cancerous tissues
+1973: Paul Lauterbur produces the first NMR image
+1975: Richard Ernst introduces phase and frequency encoding, laying the groundwork for modern MRI
+1977: Peter Mansfield develops echo-planar imaging, greatly reducing scan times
+1980s: The first commercial MRI scanners become available for clinical use
+
+3. Basic Principles of MRI
+MRI relies on the principles of nuclear magnetic resonance, primarily focusing on hydrogen atoms due to their abundance in the human body. The key steps in MRI image formation are:
+
+Magnetization: A strong external magnetic field aligns the spin of hydrogen protons in the body.
+Excitation: Radio frequency (RF) pulses are applied, causing the protons to absorb energy and change their alignment.
+Relaxation: When the RF pulse is turned off, the protons release energy and return to their original alignment.
+Signal detection: The released energy is detected as radio waves by receiver coils.
+Image reconstruction: Complex mathematical algorithms convert the detected signals into detailed images.
+
+The contrast in MRI images is based on differences in the relaxation times of protons in different tissues. Two main types of relaxation are:
+
+T1 relaxation (longitudinal relaxation): The time it takes for protons to realign with the main magnetic field.
+T2 relaxation (transverse relaxation): The time it takes for protons to dephase or lose coherence with each other.
+
+Different pulse sequences can be used to emphasize T1 or T2 contrast, allowing for optimal visualization of various tissue types and pathologies.
+4. MRI Technology and Equipment
+A typical MRI system consists of several key components:
+
+Main magnet: Generates a strong, uniform magnetic field (typically 1.5 or 3 Tesla for clinical use).
+Gradient coils: Produce smaller magnetic fields that allow for spatial encoding of the MR signal.
+RF coils: Transmit RF pulses to excite protons and receive the emitted signals.
+Computer system: Controls the scanner and processes the acquired data to generate images.
+Patient table: Moves the patient into and out of the scanner bore.
+
+Additional hardware may include:
+
+Specialized surface coils for imaging specific body parts
+MRI-compatible monitoring equipment for patient safety
+Contrast agent injectors for enhanced imaging
+
+5. Types of MRI Scans
+Various MRI techniques have been developed to address specific clinical needs:
+
+Structural MRI: Provides detailed anatomical images.
+Functional MRI (fMRI): Measures brain activity by detecting changes in blood oxygenation.
+Diffusion-weighted imaging (DWI): Assesses the movement of water molecules in tissues, useful for detecting stroke and tumors.
+Perfusion MRI: Evaluates blood flow through tissues.
+Magnetic Resonance Angiography (MRA): Visualizes blood vessels without the need for contrast agents.
+Spectroscopy: Analyzes the chemical composition of tissues.
+Cardiac MRI: Provides detailed images of the heart's structure and function.
+Whole-body MRI: Scans the entire body for systemic diseases or metastases.
+
+6. Clinical Applications
+MRI has a wide range of clinical applications across various medical specialties:
+
+Neurology: Brain tumors, stroke, multiple sclerosis, spine disorders.
+Orthopedics: Joint injuries, bone tumors, spinal cord compression.
+Oncology: Tumor detection, staging, and treatment monitoring.
+Cardiology: Heart structure and function assessment, myocardial infarction evaluation.
+Gastroenterology: Liver diseases, inflammatory bowel diseases, pelvic floor disorders.
+Gynecology: Uterine and ovarian abnormalities, fetal imaging.
+Urology: Prostate cancer detection and staging.
+Vascular imaging: Aneurysms, arterial stenosis, venous thrombosis.
+
+7. MRI Interpretation
+Interpreting MRI scans requires specialized knowledge and experience. Key aspects include:
+
+Understanding normal anatomy and common variants.
+Recognizing pathological changes and their appearances on different MRI sequences.
+Correlating MRI findings with clinical information and other imaging modalities.
+Using standardized reporting systems for consistent communication of findings.
+Applying quantitative analysis techniques when appropriate (e.g., volumetric measurements, diffusion tensor imaging metrics).
+
+Radiologists typically follow a systematic approach when interpreting MRI scans:
+
+Review patient history and clinical questions.
+Assess image quality and coverage.
+Evaluate normal structures systematically.
+Identify and characterize abnormalities.
+Correlate findings across different sequences and planes.
+Formulate a differential diagnosis or conclusion.
+Recommend further investigations or follow-up if necessary.
+
+Advanced interpretation techniques may involve:
+
+Computer-aided detection (CAD) systems
+Artificial intelligence and machine learning algorithms
+Multimodality image fusion (e.g., PET-MRI)
+
+8. Risks and Safety Considerations
+While MRI is generally considered safe, there are several important safety considerations:
+
+Magnetic field interactions: Ferromagnetic objects can become projectiles in the MRI environment.
+Implanted medical devices: Some devices (e.g., older pacemakers) may malfunction or heat up during MRI.
+Tissue heating: RF energy deposition can cause localized heating, monitored as the Specific Absorption Rate (SAR).
+Peripheral nerve stimulation: Rapidly changing magnetic fields can cause tingling or twitching sensations.
+Acoustic noise: MRI scanners produce loud noises, requiring hearing protection.
+Claustrophobia: Some patients may experience anxiety in the confined scanner bore.
+Pregnancy: While no harmful effects have been conclusively demonstrated, caution is advised in the first trimester.
+Gadolinium-based contrast agents: Rarely, these can cause allergic reactions or nephrogenic systemic fibrosis in patients with severe kidney dysfunction.
+
+To mitigate these risks, MRI facilities implement strict safety protocols, including:
+
+Thorough patient screening
+Removal of all metallic objects before entering the MRI suite
+Use of MRI-compatible equipment and monitoring devices
+Proper training for all personnel working in the MRI environment
+
+9. Advantages and Limitations
+Advantages of MRI include:
+
+Excellent soft tissue contrast
+Multiplanar imaging capabilities
+No ionizing radiation exposure
+Ability to image blood flow without contrast agents
+Functional and metabolic information (fMRI, spectroscopy)
+
+Limitations of MRI include:
+
+High cost of equipment and examinations
+Long examination times compared to some other imaging modalities
+Sensitivity to patient motion
+Contraindications for some implanted devices and metallic foreign bodies
+Limited availability in some regions
+Challenges in imaging patients with severe claustrophobia or obesity
+
+10. Future Developments
+The field of MRI continues to evolve rapidly. Some areas of ongoing research and development include:
+
+Higher field strength magnets (7T and beyond) for improved resolution and signal-to-noise ratio
+Advanced motion correction techniques for faster scanning and reduced artifacts
+Artificial intelligence applications for image reconstruction, interpretation, and workflow optimization
+Hybrid imaging systems (e.g., PET-MRI) for combined structural and molecular imaging
+MRI-guided interventions and surgeries
+Portable and low-field MRI systems for increased accessibility
+Novel contrast agents for molecular and cellular imaging
+Quantitative MRI techniques for tissue characterization and biomarker development
+
+11. Conclusion
+Magnetic Resonance Imaging has become an indispensable tool in modern medicine, providing unparalleled insights into the human body's structure and function. Its non-invasive nature, excellent soft tissue contrast, and lack of ionizing radiation make it a preferred imaging modality for many clinical applications. As technology continues to advance, MRI is likely to play an increasingly important role in diagnosis, treatment planning, and medical research, ultimately improving patient care and our understanding of human health and disease.
+
+Magnetic resonance imaging (MRI) is a topic that is delivered in a variety of different formats throughout medical school, therefore students and healthcare professionals alike may receive different standards of teaching. There are several different types, viewing planes, and a large range of associated pathologies to visualise.
+
+These complexities may make students intimidated by MRI interpretation. Here, we provide a brief overview of MRI fundamentals, approach, and interpretation. Whilst we wonâ€™t be able to turn you into a radiologist, we may be able to help you look less confused when you next get quizzed by one.
+
+Generally, MRI is used less commonly than plain films and CT scans. They are often reserved for superior viewing of soft tissues. MRI is particularly helpful in patients with suspected neurological or musculoskeletal pathology, however, they can be used in many other specialities too. It takes slightly longer to acquire MR images and they are more expensive. MRI is contraindicated in patients who have ferromagnetic metal implants or foreign bodies.1 Consideration should be given to patients who are claustrophobic as well.
+
+How do they work?
+MRI machines work by exploiting the interaction of the magnetic field, hydrogen ions, and radiofrequency (RF) pulse. When you put a patient in a strong magnetic field, their hydrogen ions align in the direction of the magnetic field. Applying an RF pulse will change the direction of alignment of these hydrogen ions. When the RF pulse is turned off, these ions will attempt to realign with the magnetic field again and release a signal. The strength of this signal depends on the type of tissue (fat, muscle, water) that the hydrogen ion is in.1
+
+Using these principles, you can adjust the machine to detect signals of varying ranges and from varying planes of magnetisation â€“ this is where the â€œweighted imagingâ€ comes in. We can also tell the machine to disregard certain values of signals to â€œsuppressâ€ them when it comes to viewing the pictures â€“ these are known as â€œfat suppressionâ€ sequences.2
+
+MRI can also be used as a dynamic imaging tool. For example, diffusion of water molecules can be studied with diffusion-weighted imaging (DWI), or macroscopic movement of blood can be studied, in the case of MR angiographic techniques.
+
+MRI images and sequences
+There are many factors that lead to the production of a final MR image. Different combinations of these will be useful for different clinical presentations, but here are some examples of common images and sequences:
+
+T1-weighted and T2-weighted imaging (T1WI and T2WI)
+DWI and ADC
+FLAIR
+STIR
+and many others...
+
+T1 and T2 weighted images
+T1 and T2 images demonstrate different tissues based on the timing of the RF pulses. Between the two, the key differences you need to be aware of are:
+
+T1 â€“ ONE tissue is bright: fat
+T2 â€“ TWO tissues are bright: fat and water (WW2 â€“ Water is White in T2)
+T1 is the most â€˜anatomicalâ€™ image (Figure 1). Conversely, the cerebrospinal fluid (CSF) is bright in T2 due to itsâ€™ water content.
+T2 is generally the more commonly used, but T1 can be used as a reference for anatomical structures or to distinguish between fat vs. water bright signals.
+
+Additional features of T1/T2 weighted images
+Fat suppressed
+
+The fat signal can be suppressed to enable a better view of pathology in and around anatomical structures â€“ particularly oedema. This is useful in adrenal tumours or bone marrow pathology, where the image will appear homogenous with surrounding tissue due to fat content.
+
+Gadolinium-enhanced
+
+Gadolinium enhances vasculature (i.e. arteries) or pathologically-vascular tissues (e.g. intracranial metastases, meningiomas). This process involves injecting 5-15ml of contrast intravenously, with images taken shortly thereafter. Gadolinium appears bright in signal, allowing for detection of detailed abnormalities (e.g. intracranial pathologies). Typical intracranial abscesses have a â€œring-enhancementâ€ pattern, while metastases enhance homogeneously. Meningiomas will have a homogenous enhancement after the contrast, but will also have a â€œdural tail,â€ meaning the lesion appears continuous with the dura (Figure 2).
+
+Inversion recovery (IR) sequences
+
+These types of images are manipulations of T1 and T2. They nullify certain tissue types based on their inversion timings, thereby stopping tissues such as fat and CSF from appearing as bright signals. This is helpful to identify pathological signals. The two main types are discussed below.
+
+Short tau inversion recovery (STIR)
+
+STIR is based on a T2 image, but the image is manipulated in a way that results in fat (and any other materials with similar signals) being nullified. Unlike fat-suppressed images, however, STIR can not be used with gadolinium contrast.4 As previously discussed, fat can make the interpretation of oedematous areas and bone marrow difficult. Figure 3 shows how this nullified fat signal can assist with the identification of oedema due to fractures.
+
+Fluid attenuated inversion recovery (FLAIR)
+
+FLAIR is also similar to T2, however, the CSF signal is nullified. This is particularly useful for evaluating structures in the central nervous system (CNS), including the periventricular areas, sulci, and gyri. For example, FLAIR can be used to identify plaques in multiple sclerosis, subtle oedema after a stroke, and pathology in other conditions whereby CSF may interfere with interpretation (Figure 4).
+
+Diffusion-weighted imaging (DWI) and apparent diffusion coefficient (ADC)
+DWI is an imaging modality that combines T2 images with the diffusion of water. With DWI scans, ischaemia can be visualised within minutes of it occurring (Figure 5). This is because DWI has a high sensitivity for water diffusion, thereby detecting the physiological changes that happen immediately after a stroke.
+
+ADC should be used alongside DWI in order to confirm whether there is true restricted diffusion and not simply â€œshine throughâ€ from T2. The table below explains the key differences between the two.
+
+DWI
+Measures abnormal diffusion of water (restricted diffusion) but ALSO combines it with the T2 image
+
+Structures that are bright on a T2 image can shine through into DWI images
+
+High signal in early ischaemia, but lowers after several weeks
+
+Very sensitive (e.g. if CT is normal, but stroke is still suspected)
+
+ADC
+Measures purely diffusion of water with no T2 combination 
+
+Provides confirmation of true restricted diffusion in DWI
+
+Low signal at first, but the signal increases over several weeks and stays high
+
+Always use DWI in conjunction with ADC
+
+Magnetic Resonance Imaging (MRI): Comprehensive Report
+
+Introduction
+
+Magnetic Resonance Imaging (MRI) is a non-invasive imaging technology that produces three-dimensional detailed anatomical images. It is often used for disease detection, diagnosis, and treatment monitoring. MRI is based on advanced technology that excites and detects changes in the direction of the rotational axis (spin) of protons found in the water that makes up living tissues.
+
+How MRI Works
+
+	1.	Basic Principles:
+	â€¢	Magnetic Field: MRI uses a powerful magnetic field (typically 1.5 to 3.0 Tesla) to align the magnetization of hydrogen nuclei in the body.
+	â€¢	Radiofrequency Pulses: A radiofrequency (RF) current is then pulsed through the patient, stimulating the hydrogen nuclei.
+	â€¢	Signal Emission: As the RF pulse is turned off, the MRI sensors detect the energy released as the protons return to their equilibrium state.
+	â€¢	Image Formation: The time it takes for the protons to realign with the magnetic field and the amount of energy released varies in different tissues, which helps in forming a detailed image.
+	2.	Equipment:
+	â€¢	Magnet: The primary component, creating the magnetic field.
+	â€¢	Gradient Coils: These coils create a variable magnetic field, allowing spatial localization of the MRI signals.
+	â€¢	RF Coils: These coils send RF pulses and receive the resulting signal from the protons.
+	â€¢	Computer System: This system controls the MRI scanner and processes the received signals to create images.
+	3.	Imaging Sequences:
+	â€¢	T1-Weighted Images: Provide good anatomical detail and are useful for visualizing the morphology and pathology of tissues.
+	â€¢	T2-Weighted Images: Highlight fluid-containing structures and are particularly useful for detecting edema and inflammation.
+	â€¢	FLAIR (Fluid-Attenuated Inversion Recovery): Suppresses the signal from fluid to enhance the visibility of lesions.
+	â€¢	Diffusion-Weighted Imaging (DWI): Useful in detecting acute stroke and cellular structure abnormalities.
+	â€¢	Functional MRI (fMRI): Measures brain activity by detecting changes associated with blood flow.
+
+Interpretation of MRI Images
+
+	1.	Radiologistâ€™s Role:
+	â€¢	Training: Radiologists are medical doctors specialized in interpreting medical images.
+	â€¢	Analysis: They analyze the contrast, intensity, and location of abnormalities in the images.
+	â€¢	Reporting: Radiologists compile a detailed report summarizing their findings, which is then used by referring physicians to aid in diagnosis and treatment planning.
+	2.	Common Findings:
+	â€¢	Tumors: Appear as masses that may have a different intensity compared to surrounding tissues.
+	â€¢	Inflammation and Infection: Often show up as areas of increased intensity on T2-weighted images.
+	â€¢	Stroke: Acute strokes are often detected using DWI due to the restricted diffusion of water molecules.
+
+Uses of MRI
+
+	1.	Neurology:
+	â€¢	Brain Tumors: Detailed imaging of brain structures to detect and monitor tumors.
+	â€¢	Multiple Sclerosis: Identifying lesions in the brain and spinal cord.
+	â€¢	Stroke: Early detection and assessment of brain damage.
+	2.	Orthopedics:
+	â€¢	Joint Disorders: Assessing injuries to joints, cartilage, and ligaments.
+	â€¢	Spinal Conditions: Evaluating herniated discs and spinal cord compression.
+	3.	Cardiology:
+	â€¢	Heart Diseases: Visualizing cardiac structures and assessing myocardial function.
+	â€¢	Vascular Diseases: Imaging blood vessels to detect aneurysms and blockages.
+	4.	Oncology:
+	â€¢	Cancer Detection: Identifying and staging tumors in various body parts.
+	â€¢	Treatment Monitoring: Assessing the effectiveness of cancer treatments.
+	5.	Pediatrics:
+	â€¢	Congenital Anomalies: Diagnosing congenital abnormalities.
+	â€¢	Developmental Disorders: Evaluating brain development and disorders.
+
+Risks and Safety
+
+	1.	Safety Profile:
+	â€¢	Non-Ionizing Radiation: MRI does not use ionizing radiation, unlike X-rays and CT scans, making it safer for repeated use.
+	â€¢	Contrast Agents: Gadolinium-based contrast agents are generally safe but may pose a risk for patients with severe kidney disease.
+	2.	Risks and Contraindications:
+	â€¢	Metal Implants: Strong magnetic fields can interact with metal implants (e.g., pacemakers, cochlear implants), posing a risk.
+	â€¢	Claustrophobia: Some patients experience anxiety or claustrophobia due to the enclosed nature of the MRI machine.
+	â€¢	Pregnancy: Although MRI is generally considered safe during pregnancy, the use of contrast agents is avoided unless absolutely necessary.
+	3.	Adverse Effects:
+	â€¢	Allergic Reactions: Rare allergic reactions to contrast agents.
+	â€¢	Nephrogenic Systemic Fibrosis (NSF): A rare but serious condition associated with the use of gadolinium-based contrast agents in patients with severe kidney disease.
+
+Advancements in MRI Technology
+
+	1.	High-Field MRI:
+	â€¢	7 Tesla and Above: Provides higher resolution images, allowing for more detailed anatomical and functional studies.
+	2.	Functional MRI (fMRI):
+	â€¢	Brain Mapping: Used in neuroscience research to map brain activity and understand brain function.
+	3.	Diffusion Tensor Imaging (DTI):
+	â€¢	White Matter Tractography: Maps the diffusion of water along white matter tracts in the brain, useful in studying brain connectivity.
+	4.	Magnetic Resonance Spectroscopy (MRS):
+	â€¢	Chemical Analysis: Provides information about the chemical composition of tissues, aiding in the diagnosis of metabolic disorders and brain tumors.
+	5.	Real-Time MRI:
+	â€¢	Dynamic Imaging: Captures real-time movements and functions of organs, useful in cardiovascular and musculoskeletal studies.
+
+Conclusion
+
+MRI is a powerful diagnostic tool that provides detailed images of the bodyâ€™s internal structures without the use of ionizing radiation. Its ability to distinguish between different types of tissues makes it invaluable in diagnosing a wide range of conditions across various medical fields. Although MRI is generally safe, it does involve certain risks, particularly for patients with metal implants or severe kidney disease. Continuous advancements in MRI technology promise to enhance its diagnostic capabilities, providing even more detailed and functional information in the future.

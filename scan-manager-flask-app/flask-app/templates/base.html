@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+     <!-- Add Font Awesome stylesheet -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+    <!-- <title>{% block title %} {% endblock %}</title> -->
+     <title>Scan Manager</title>
+
+
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+        <a class="navbar-brand" href="{{ url_for('index')}}">Scan Manager</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+            {% if current_user.is_authenticated %}
+            {% if current_user.user_type == 'doctor' %}
+            <li class="nav-item">
+                <a class="nav-link" href="{{ url_for('patient_search') }}">Find patient</a>
+            </li>
+            {% endif %}
+            <li class="nav-item">
+                <a class="nav-link" href="{{ url_for('patient_scans', patient_id=current_user.patient_id) }}">My Scans</a>
+            </li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+            
+            <li class="nav-item list-group-item-dark rounded pl-2 pr-2">
+                <a class="nav-link text-dark" href="{{ url_for('logout') }}">Log Out <i class="fa-solid fa-arrow-right-from-bracket"></i></a>
+            </li>
+            {% endif %}
+            </ul>
+        </div>
+    </nav>
+
+    <div class="navbar fixed-bottom bg-light text-dark text-center py-2">
+        <div class="container justify-content-center">
+            <img src="{{ url_for('static', filename='images/Go-Reply-logo.png')}}" class="navbar-logo">
+        </div>
+    </div>
+
+    <div class="container">
+        {% block content %} {% endblock %}
+    </div>
+
+    <link rel="stylesheet" href="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/themes/df-messenger-default.css">
+    <script src="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/df-messenger.js"></script>
+    <df-messenger
+    project-id="apt-vine-428509-d2"
+    agent-id="d4df9e88-d879-4cde-8591-9bf0476714ad"
+    intent="WELCOME"
+    language-code="en"
+    max-query-length="-1">
+    <df-messenger-chat-bubble
+    chat-title="Emma I"
+    chat-title-icon="{{ url_for('static', filename='images/user-doctor-solid.svg') }}">
+    </df-messenger-chat-bubble>
+    </df-messenger>
+    <style>
+        df-messenger {
+            z-index: 1500;
+            position: fixed;
+            --df-messenger-font-color: #000;
+            --df-messenger-font-family: sans-serif;
+            --df-messenger-chat-background: #f3f6fc;
+            --df-messenger-message-user-background: #d3e3fd;
+            --df-messenger-message-bot-background: #fff;
+            bottom: 16px;
+            right: 16px;
+        }
+        html, body {
+            overflow: hidden;
+        }
+    </style>
+
+
+
+    <div class="footer-compensation"></div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

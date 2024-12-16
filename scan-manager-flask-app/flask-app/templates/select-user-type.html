@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  
+<div class="user-type-form-container">
+    <h3>Hi {{(current_user.firstname[0].upper() + current_user.firstname[1:]) if current_user.firstname else current_user.firstname}},</h3>
+    <h4>{% block title %}Just a few extra details to get started{% endblock %}</h4>
+    <div class="button-container">
+        <form action="{{url_for('profile_settings')}}" method="post" class="">
+
+            <div class="form-group mt-2">
+                <label for="sexInput">Sex:</label>
+                <select id="sexInput" name="sexInput" required>
+                    <option value="" disabled selected>Please select one</option>
+                    <option value="M">M</option>
+                    <option value="F">F</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="dob">Date of birth:</label>
+                <input type="date" id="dob" name="dob" required>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary" id="submitBtn">Submit</button>
+            </div>
+
+        </form>
+    </div>
+</div>
+
+
+{% endblock %}

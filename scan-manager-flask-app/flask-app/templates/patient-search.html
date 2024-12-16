@@ -1,0 +1,200 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="row align-items-center">
+        <div class="col col-md-8">
+            <h1>{% block title %}Search for a patient{% endblock %}</h1>
+        </div>
+        <div class="col col-md-4">
+            <a href="{{ url_for('add_patient') }}">
+                <button type="button" class="btn btn-primary"><i class="fa-solid fa-plus"></i> Add new patient</button>
+            </a>
+        </div>
+    </div>
+
+    <form id="patient-search-form" name="patient-search-form" method="POST">
+        <div class="row mb-2">
+            <div class="col-auto pr-1 d-flex align-items-center">
+                <input type="text" id="patient-search-query" name="patient-search-query" value="{{ request.form['patient-search-query'] }}" placeholder="Enter name">
+            </div>
+            <div class="col-auto pl-0">
+                <button type="submit" class="rounded-pill"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+            <div class="col-auto d-flex align-items-center">
+                <label class="m-0 mr-1">Sort by: </label>
+                <select id="sort-by-dropdown" name="sort-by-dropdown">
+                    <option value="firstname" {% if request.form.get('sort-by-dropdown') == 'firstname' %} selected {% endif %}>First name</option>
+                    <option value="lastname" {% if request.form.get('sort-by-dropdown') == 'lastname' or (request.form.get('sort-by-dropdown') is none) %} selected {% endif %}>Last name</option>
+                    <option value="dob" {% if request.form.get('sort-by-dropdown') == 'dob' %} selected {% endif %}>DOB</option>
+                    <option value="patient_id" {% if request.form.get('sort-by-dropdown') == 'patient_id' %} selected {% endif %}>Patient ID</option>
+                </select>
+            </div>
+        </div>
+    </form>
+
+    <div class="row mb-3">
+        <div class="col-6">
+            <div class="row rounded-pill bg-light border">
+                <div class="col text-center">
+                    <i class="fa-solid fa-user"></i> Patient
+                </div>
+                <div class="col text-center">
+                    <i class="fa-solid fa-briefcase-medical"></i> Doctor
+                </div>
+                <div class="col text-center">
+                    <i class="fa-solid fa-star-of-life"></i> Admin
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row patient-query-results-box">
+        <div class="col-6 patient-list-box">
+            {% for result in results %}
+                <div class="row patient-list-result mb-2" data-info="{{ result.patient_id }}">
+                    <div class="col-1">
+                        <button class="change-role-button" data-info="{{ result.patient_id }}">
+                            {% if result.user_type == 'patient' %}<i class="fa-solid fa-user"></i>{% endif %}
+                            {% if result.user_type == 'doctor' and result.admin == 'N' %}<i class="fa-solid fa-briefcase-medical"></i>{% endif %}
+                            {% if result.admin == 'Y' %}<i class="fa-solid fa-star-of-life"></i>{% endif %}
+                        </button>
+                    </div>
+                    <div class="{% if current_user.admin == 'Y' %}col-8 col-lg-10{% else %}col-11{% endif %} bg-dark bg-gradient rounded text-light">
+                        <a href="{{ url_for('patient_scans', patient_id=result['patient_id']) }}">
+                            <div class="row align-items-center h-100">
+                                <div class="col-1">
+                                    {{ result.sex }}
+                                </div>
+                                <div class="col-6">
+                                    {{ result.lastname | upper }}, {{ (result.firstname[0].upper() + result.firstname[1:]) if result.firstname else result.firstname }}
+                                </div>
+                                <div class="col-5">
+                                    {{ result.dob }}
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    {% if current_user.admin == 'Y' %}
+                    <div class="col-2 col-lg-1 d-flex align-items-center bin-icons">
+                        <a href="{{ url_for('delete_patient', patient_id=result['patient_id']) }}" onclick="return confirm('Are you sure you want to delete this patient?')"><i class="material-icons">delete</i></a>
+                    </div>
+                    {% endif %}
+                </div>
+            {% endfor %}
+        </div>
+        {% for result in results %}
+        <div class="col-6">
+            <div class="patient-hover-box rounded" id="{{ result.patient_id }}">
+                <div class="row">
+                    <img src="{{ url_for('static', filename='images/blank-profile.jpg') }}" alt="Profile Picture">
+                    <div class="details">
+                        <h4>{{ result.lastname | upper }}, {{ (result.firstname[0].upper() + result.firstname[1:]) if result.firstname else result.firstname }}</h4>
+                        <h6>Patient ID: {{ result.patient_id }}</h6>
+                        <h5>DOB: {{ result.dob }}</h5>
+                        <h5>Sex: {{ result.sex }}</h5>
+                        <h5>Role: {{ result.user_type }}</h5>
+                        <h5>Admin: {{ result.admin }}</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+
+    <div id="rolePopup" class="popup">
+        <div class="popup-content">
+            <span class="close">&times;</span>
+            <p>Select a new role:</p>
+            <form id="popupForm" method="post" action="{{ url_for('change_user_status') }}">
+                <button type="button" onclick="submitForm('patient')"><i class="fa-solid fa-user"></i> Patient</button>
+                <button type="button" onclick="submitForm('doctor')"><i class="fa-solid fa-briefcase-medical"></i> Doctor</button>
+                <button type="button" onclick="submitForm('admin')"><i class="fa-solid fa-star-of-life"></i> Admin</button>
+                <input type="hidden" id="selectedOption" name="selectedOption" value="">
+                <input type="hidden" id="patient_id_select" name="patient_id_select" value="">
+            </form>
+        </div>
+    </div>
+
+
+    <input type="hidden" id="currentUserAdmin" value="{{ current_user.admin }}">
+    <script>
+        function submitForm(option) {
+            document.getElementById('selectedOption').value = option;
+            document.getElementById('popupForm').submit();
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            // Get the form and sort-by dropdown elements
+            const form = document.getElementById('patient-search-form');
+            const sortByDropdown = document.getElementById('sort-by-dropdown');
+            
+            // Add event listener to the dropdown
+            sortByDropdown.addEventListener('change', function() {
+                // Submit the form when the dropdown value changes
+                form.submit();
+            });
+
+            var targetElement = document.querySelector('.patient-list-box');
+            // Get the position of the target element
+            var targetPosition = targetElement.getBoundingClientRect().top;
+            // Set the top position of all the hover boxes to match the target element's top position
+            var hoverBoxes = document.querySelectorAll('.patient-hover-box');
+            hoverBoxes.forEach(item => {
+                item.style.top = targetPosition + 'px';
+            })
+
+            const patientItems = document.querySelectorAll('.patient-list-result');
+            patientItems.forEach(item => {
+                item.addEventListener('mouseenter', function() {
+                    // Get the data-info attribute value
+                    const dataInfo = item.getAttribute('data-info');
+                    // Show the corresponding hover box
+                    document.getElementById(dataInfo).style.display = 'block';
+                });
+
+                item.addEventListener('mouseleave', function() {
+                    // Get the data-info attribute value
+                    const dataInfo = item.getAttribute('data-info');
+                    // Hide the corresponding hover box
+                    document.getElementById(dataInfo).style.display = 'none';
+                });
+            });
+
+            var currentUserAdmin = document.getElementById('currentUserAdmin').value;
+            if (currentUserAdmin == 'Y') {
+            // Get the popup
+            var popup = document.getElementById("rolePopup");
+            // Get all buttons for opening the pop up
+            var roleChangeBtns = document.querySelectorAll('.change-role-button');
+            // Get the <span> element that closes the popup
+            var span = document.getElementsByClassName("close")[0];
+
+            // When the user clicks a button, open the popup 
+            roleChangeBtns.forEach(btn => {
+                btn.onclick = function() {
+                    popup.style.display = "block";
+                    // Get the patietn ID of button clicked
+                    const patientID = this.getAttribute('data-info');
+                    // Set the patient ID in the form to match the button clicked
+                    document.getElementById('patient_id_select').value = patientID;
+                    console.log(patientID);
+                }
+            })
+
+            // When the user clicks on <span> (x), close the popup
+            span.onclick = function() {
+                popup.style.display = "none";
+            }
+
+            // When the user clicks anywhere outside of the popup, close it
+            window.onclick = function(event) {
+                if (event.target == popup) {
+                    popup.style.display = "none";
+                }
+            }
+            }
+
+
+        });
+    </script>
+{% endblock %}

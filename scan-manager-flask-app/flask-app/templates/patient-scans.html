@@ -1,0 +1,108 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="row align-items-center">
+        <div class="col-5">
+            {% if current_user.user_type == 'doctor' %}
+            <h1>{% block title %}{{patient.lastname | upper}}, {{(patient.firstname[0].upper() + patient.firstname[1:]) if patient.firstname else patient.firstname}}{% endblock %}</h1>
+            {% endif %}
+
+            {% if current_user.user_type == 'patient' %}
+            <h1>Hi {{ (patient.firstname[0].upper() + patient.firstname[1:]) }},</h1>
+            {% endif %}
+        </div>
+        <div class="col-7 align-items-center">
+            <form method="POST" action="{{url_for('upload_scan')}}">
+                <input type="hidden" id="patient_id" name="patient_id" value="{{ patient.patient_id }}">
+                    <button type="submit" class="btn btn-primary">Upload scan</button>
+            </form>
+        </div>
+    </div> 
+    <div class="row">
+        <div class="col">
+            {% if current_user.user_type == 'doctor' %}
+            <h3>Available scans:</h3>
+            {% endif %}
+            {% if current_user.user_type == 'patient' %}
+            <h3>Here's your scans:</h3>
+            {% endif %}
+        </div>
+    </div>
+    
+    <div class="row scan-query-results-box">
+        <div class="col-6 scan-list-box">
+
+            {% if scans|length == 0 %}
+            <div class="d-flex justify-content-center align-items-center">
+                <img src="{{url_for('static', filename='images/missing_files.png')}}" class="missing-file-img mr-3">
+                <p class="m-auto missing-file-text"><strong>There's no scans here yet.</strong> Try adding some using the button above.</p>
+            </div>  
+            {% endif %}
+
+
+            {% for scan in scans %}
+                <div class="row scan-list-result mb-2" data-info="{{scan.scan_id}}">
+                    <div class="col-10 col-lg-11 bg-dark bg-gradient rounded text-light">
+                        <a href="{{url_for('inspect_scan', file_type=scan['file_type'], scan_id=scan['scan_id'])}}">
+                        <div class="row align-items-center h-100">
+                            <div class="col-2">
+                                {% if scan.file_type == 'text' %}<i class="fa-solid fa-file-lines"></i>{% endif %}
+                                {% if scan.file_type == 'nifti' %}<i class="fa-solid fa-n"></i>{% endif %}
+                                {% if scan.file_type == 'dicom' %}<i class="fa-solid fa-d"></i>{% endif %}
+                            </div>
+                            <div class="col-10">
+                                {{scan.timestamp[:scan.timestamp.index('T')]}} {{scan.timestamp[scan.timestamp.index('T')+1:]}}
+                            </div>
+                        </div>
+                        </a>
+                    </div>
+                    <div class="col-2 col-lg-1">
+                        <a href="{{url_for('delete_file', scan_id=scan['scan_id'])}}" onclick="return confirm('Are you sure you want to delete the file?')"><i class="material-icons">delete</i></a>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+        {% for scan in scans %}
+        <div class="col-6">
+            <div class="scan-hover-box rounded" id="{{scan.scan_id}}">
+                <h4>Scan ID: {{scan.scan_id}}</h4>
+                <h5>Type: {{scan.file_type}}</h5>
+                <h5>Report preview:</h5>
+                <p class="truncate-multiline">{{scan.report}}</p>
+            </div>
+        </div> 
+        {% endfor %}
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Get the target element you want to match the top position with
+            var targetElement = document.querySelector('.scan-list-box');
+            // Get the position of the target element
+            var targetPosition = targetElement.getBoundingClientRect().top;
+            // Set the top position of all the hover boxes to match the target element's top position
+            var hoverBoxes = document.querySelectorAll('.scan-hover-box');
+            hoverBoxes.forEach(item => {
+                item.style.top = targetPosition + 'px';
+            })
+
+            const scanItems = document.querySelectorAll('.scan-list-result');
+            scanItems.forEach(item => {
+                item.addEventListener('mouseenter', function() {
+                    const scanID = this.getAttribute('data-info');
+                    const idHoverBox = document.getElementById(scanID);
+                    console.log(idHoverBox);
+                    idHoverBox.style.display = 'block';
+                });
+                item.addEventListener('mouseleave', function() {
+                    const scanID = this.getAttribute('data-info');
+                    const idHoverBox = document.getElementById(scanID);
+                    console.log(idHoverBox);
+                    idHoverBox.style.display = 'none';
+                });
+            });
+        })
+
+    </script>
+
+{% endblock %}

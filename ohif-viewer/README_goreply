@@ -1,0 +1,33 @@
+This version of OHIF viewer has been configured for use with the 'Scan Manager' project created by interns at Go Reply in Summer 2024: James Housden, Matthew Zahra, Samiksha Vanga.
+
+This repository diverged from the MAIN branch of the OHIF viewer project on Thu Jul 18 15:44:27 2024.
+
+General documentation for this viewer can be found at https://docs.ohif.org/
+
+
+- CONFIG FILES
+Viewers/platform/app/public/config contains the relevant config files. By default, config/default.js is used by the application. To modify this behaviour, set the environment variable APP_CONFIG to the desired path for the config file.
+
+E.g: APP_CONFIG = config/google.js
+
+
+- LINKING THE VIEWER TO A DATA SOURCE
+The viewer is capable of connecting to a Google Healthcare API DICOM datastore in a Google Cloud project. See the current config/default.js file for an example of how to do so (the previous contents of the file has been commented out). Instructions for configuring the datastore to be accessible can be found at https://docs.ohif.org/2.0-deprecated/deployment/recipes/google-cloud-healthcare/
+
+
+- RUNNING THE VIEWER
+There are several ways of running the viewer outlined at https://docs.ohif.org/.
+1) Yarn dev: https://docs.ohif.org/development/getting-started#kick-the-tires
+This is good for running a local server for development and debugging. It may be necessary to delete the node_modules directories present that have previously been generated after running 'yarn install'.
+
+2) Docker: https://docs.ohif.org/deployment/docker
+A dockerfile is already present in the repo for building an image of the application. It should be noted that this image can take a significant amount of time to build (>10 mins).
+
+
+- LINKING TO A SPECIFIC STUDY / SERIES / INSTANCE
+A specific file in the datastore can be viewed by adding variables to the URL when linking to the viewer. The format is as follows:
+    {BASE_URL}/viewer?StudyInstanceUIDs={STUDY_UID}&SeriesInstanceUIDs={SERIES_UID}
+
+
+- Important Notes
+1) Sometimes after modifying the config files, or changing the environment variable APP_CONFIG, the changes have no effect on the viewer. This is due to an issue where the browser (particularly Chrome) caches the config and therefore pulls them automatically when the app is redeployed. To fix this, clear the browser cache or try using a different browser.

@@ -1,0 +1,72 @@
+
+Scan Manager is designed to streamline the management of medical scans and reports, providing an efficient, user-friendly platform for both doctors and patients. Below is an in-depth overview of the primary functionalities offered by the app:
+Upload Scans
+Purpose:
+    • To allow users to upload various types of medical scans to the platform.
+Supported File Types:
+    1 DICOM: Standard format for storing medical imaging data.
+    2 Nifti: Commonly used format for Neuroimaging data.
+    3 Text Files: For associated documentation or reports.
+How to Use:
+    • The upload method for all 3 of the file types are the same.
+    • Accessing the Upload Page: Logged-in users can navigate to the upload page through the navigation bar at the top of the webpage. Click on the find patient and there will be a button that says add new patient.
+    • Uploading Files: Use the provided interface to select and upload files from your device. On the form your patient ID will automatically be present. Add a time stamp for when the scan was taken and choose the files that you would like to upload.You can choose files one by one or multiple files at once. The form will only allow files to be one of the supported file types: DICOM, Nifti, and Text Files. Once you have uploaded the files press submit and the files will be uploaded.
+
+View Scans
+Purpose:
+    • To provide users with the ability to view and interact with their uploaded medical scans.
+How to access: 
+    • To view a scan the logged in user will need to navigate to the scans page using the navigation bar at the top or the button that is present in the middle of the screen. 
+    • to view a scan the user should press on the scan they would like to view and you will be redirected to another page.
+
+Viewing Options:
+    • Depending on the file type that the user selects the viewing method will be different.
+        ◦ NIFTI : on this page the scan will be displayed on the left hand side of the page and you can move through the different slices of the scan by moving the scroll bar. Next to the scroll bar will be a number that shows the slice that is currently being displayed.
+        ◦ DICOM: on this page the scan is present at the middle of the page and to view the different slices the user can scroll up and down to move through the slices 
+        ◦ Text File : On this page the text file is displayed in writing on the page and the user can read the file.
+Generate Reports with GenAI
+Purpose:
+    • To leverage Generative AI (GenAI) technology to create comprehensive reports based on the uploaded scans.
+    • Reports can be generate for two of the file types : Nifti and Text files.
+FOR NIFTI: 
+How to access: 
+    • to access this the user should be on the page where they can view scans.
+    • they should click on the scan that they would like to generate a report for.
+    • If the scan already has a report then the report will be shown on the right hand side but the user can still generate a new report.
+    • Before generating the report the user should select the slice with they would like to generate the report for by using the slider.
+    • On the scan’s page there will be a button that says generate report.
+    • Before pressing the button the user should select whether they would like a technical report or a non technical report and then press the button 
+Report Type: 
+    • The generate report can be of two types: technical and non technical: 
+        ◦ Technical : this report is suitable for a doctor or someone that has medical knowledge. The report will contain medical terms and provide an in depth analysis 
+        ◦ Non Technical : This report is more suitable for a patient or someone who does not have a lot of medical knowledge. The report generated will specify the main diagnosis of the scan and explain any complex medical terms that have been used. The report generated will not be in as depth as the technical report but it will still say the main points.
+FOR TEXT FILES: 
+How to access: 
+    • To access this the user should be on the page where they can view scans.
+    • they should click on the scan that they would like to generate a report for.
+    • If the scan already has a report then the report will be shown underneath the text file but the user can still generate a new report.
+    • The user should select whether they would like the technical or non technical and then press the generate report and it will be shown. 
+
+Benefits:
+    • Efficiency: Saves time by automatically generating detailed, accurate reports.
+    • Insightful: Provides advanced insights that may not be immediately apparent, aiding in better diagnosis and treatment planning.
+User Types and Roles
+Doctors:s
+    • Patient Search: Doctors can search for patients using various criteria to quickly access their medical records and scans.
+    • View and Annotate Scans: Doctors have the ability to view all scans associated with a patient and add annotations for future reference.
+    • Generate and Review Reports: Doctors can generate AI-driven reports for any uploaded scans and review them to support their clinical decisions.
+Patients:
+    • View Personal Scans: Patients can view their own scans through the patient dashboard.
+    • Download Reports: Patients can download the reports generated by the GenAI system for their own records or to share with other healthcare providers.
+Chatbot Assistance
+Purpose:
+    • To provide real-time assistance to users, helping them navigate the app and answer any questions they may have and answer any questions that they might have about MRI scans or any medical terms.
+
+ADD NEW PATIENT : only as a doctor 
+This functionality is restricted to only doctors. They can add patients to the database.
+HOW: 
+The doctor should use the navigation bar to click on Find patients. On this page will be a button that says add new patient. The user should click on this button. This will redirect the user to a form in which they will need to enter the patients first name, last name, date of birth and their sex. Once these have been filled in the doctor can press submit and the patient will be added.
+
+apps-fileview.texmex_20240711.00_p0
+app_usage.txt
+Displaying app_usage.txt.

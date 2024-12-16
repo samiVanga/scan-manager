@@ -1,0 +1,13 @@
+{
+    "PATIENT_SEARCH": "https://europe-west2-apt-vine-428509-d2.cloudfunctions.net/sorted-patient-search",
+    "PID_TO_SCANS": "https://europe-west2-apt-vine-428509-d2.cloudfunctions.net/pid-to-allscans2",
+    "PID_TO_PATIENT_DETAILS": "https://europe-west2-apt-vine-428509-d2.cloudfunctions.net/pid-to-patientdetails",
+    "DOWNLOAD_SCAN_DATA": "https://europe-west2-apt-vine-428509-d2.cloudfunctions.net/download-data", 
+    "UPLOAD_SCAN_AND_PATIENT": "https://europe-west2-apt-vine-428509-d2.cloudfunctions.net/upload-scan-and-patient-data",
+    "GENERATE_REPORT": "https://europe-west2-apt-vine-428509-d2.cloudfunctions.net/generate-report",
+    "SUMMARISE_DOCUMENT": "https://europe-west2-apt-vine-428509-d2.cloudfunctions.net/summarise-document",
+    "DELETE_FILES": "https://europe-west2-apt-vine-428509-d2.cloudfunctions.net/delete-files",
+    "OHIF_VIEWER": "https://ohif-viewer-2yixdfwa5q-uc.a.run.app",
+    "DELETE_PATIENT": "https://europe-west2-apt-vine-428509-d2.cloudfunctions.net/delete-patient",
+    "CHANGE_STATUS": "https://europe-west2-apt-vine-428509-d2.cloudfunctions.net/change-status"
+}

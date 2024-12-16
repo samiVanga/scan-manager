@@ -1,0 +1,65 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  </div>
+  <div class="container-fluid homepage-container">
+  <img src="{{url_for('static', filename='images/mri_background3.png')}}" style="width:100%">
+  <div class="centered">
+    <h1>{% block title %}Welcome to Scan Manager{% endblock %}</h1>
+    <h2>Harness the power of the cloud to centralise your medical data and unlock insights with GenAI</h2>
+    {% if not current_user.is_authenticated %}
+      <!-- <button type="button" class="login-with-google-btn" >Sign in with Google</button> -->
+      <button type="button" class="login-with-google-btn" onclick="signInWithGoogle()">Sign in with Google</button>
+    {% endif %}
+    {% if current_user.user_type == 'doctor' %}
+    <a href="{{ url_for('patient_search') }}"><button class="btn btn-light btn-primary btn-lg"><i class="fa-solid fa-magnifying-glass"></i> Search for a patient</button></a>
+    {% endif %}
+    {% if current_user.user_type == 'patient' %}
+    <a href="{{ url_for('patient_scans', patient_id=current_user.patient_id) }}"><button class="btn btn-light btn-primary btn-lg">Go to my scans <i class="fa-solid fa-arrow-right"></i></button></a>
+    {% endif %}
+  </div>
+  </div>
+
+
+  <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+  <script>
+      var firebaseConfig = {
+          apiKey: "AIzaSyBO8vuLy_JAq0mTYLvHFruuohD-IEZq7bA",
+          authDomain: "apt-vine-428509-d2.firebaseapp.com",
+          projectId: "apt-vine-428509-d2",
+          storageBucket: "apt-vine-428509-d2.appspot.com",
+          messagingSenderId: "73204620421",
+          appId: "1:73204620421:web:80a5c73589c6c243585dec",
+          measurementId: "G-49KS3P0YQ5"
+      };
+      firebase.initializeApp(firebaseConfig);
+
+      function signInWithGoogle() {
+        var provider = new firebase.auth.GoogleAuthProvider();
+        firebase.auth().signInWithPopup(provider).then(function(result) {
+            result.user.getIdToken().then(function(idToken) {
+                fetch('/login', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({idToken: idToken})
+                }).then(response => response.json()).then(data => {
+                    if (data.success) {
+                        window.location.href = '/profile_settings_redirect';
+                    } else {
+                        console.error('Authentication failed');
+                    }
+                });
+            });
+        }).catch(function(error) {
+            console.error('Error during sign-in:', error);
+        });
+      }
+  </script>
+
+  
+<div class="container">
+
+{% endblock %}

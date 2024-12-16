@@ -1,0 +1,332 @@
+input#scanFile.form-control {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: auto;
+    width: auto;
+}
+
+.file-form-label {
+    color: rgb(81, 80, 80);
+}
+
+.flash-file-alert {
+    color: red;
+}
+
+.slice-png-img {
+    width: 100%;
+    /* max-width: 500px; */
+}
+
+#sliceSlider {
+    width: 100%;
+    display:inline-block;
+    vertical-align: middle;
+}
+
+#sliderValueDisplay {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* .form-control-range-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+} */
+
+.readonly-field {
+    background-color: #f0f0f0; 
+    color: #535353; 
+    border: none; 
+}
+
+.long-text-field {
+    width: 300px;
+}
+
+.nifti-file-result {
+    background-color: rgb(245, 189, 132);
+}
+
+.dicom-file-result {
+    background-color: rgb(182, 169, 240);
+}
+
+.text-file-result {
+    background-color: rgb(253, 249, 197);
+}
+
+/* Spinner styling */
+.spinner {
+    border: 12px solid #f3f3f3; /* Light grey */
+    border-top: 12px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: spin 2s linear infinite;
+    display: none;
+}
+
+/* Spinner animation */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.form-submit-spinner-row {
+    height: 60px;
+}
+
+/* Container holding the image and the text */
+.homepage-container {
+    position: relative;
+    text-align: center;
+    color: white;
+    padding:0;
+  }
+
+.patient-list-result .bg-dark {
+    color: white !important;  /* Force text color to white */
+}
+
+ .patient-list-result a {
+    color: inherit !important;  /* Ensure link text is white */
+}
+
+/* Centered text on main page */
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -80%);
+    width: 85%;
+  }
+
+.centered h1 {
+    font-size: 2em;
+}
+.centered h2 {
+    font-size: 1em;
+}
+
+@media (min-width: 768px) {
+    .centered {
+        top:50vh;
+    }
+    .centered h1 {
+        font-size: 4em;
+    }
+    .centered h2 {
+        font-size: 2em;
+    }
+}
+
+.navbar-logo {
+    height: 30px;
+}
+
+.user-type-form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh; /* Full viewport height */
+}
+
+.btn-active {
+    background-color: white;
+    color: #007bff;
+}
+
+.scan-hover-box {
+    position: fixed;
+    display: none;
+    right: 10%;
+    top:0;
+    width: 40%; /* Adjust the width as needed */
+    height: 50%; /* Adjust the height as needed */
+    border: 1px solid #000; /* Border styling */
+    background-color: #fff; /* Background color */
+    z-index: 1000; /* Ensure it is above other elements */
+    padding: 15px; /* Padding for the content */
+    overflow: hidden;
+}
+
+.scan-list-result a {
+    text-decoration: none !important;
+    color: inherit;
+
+}
+
+.patient-hover-box {
+    position: fixed;
+    display: none;
+    right: 7%;
+    top: 0;
+    width: 40%; /* Adjust the width as needed */
+    border: 1px solid #000; /* Border styling */
+    background-color: #fff; /* Background color */
+    z-index: 1000; /* Ensure it is above other elements */
+    padding: 15px; /* Padding for the content */
+    border-radius: 8px; /* Rounded corners */
+    overflow: hidden;
+}
+
+.patient-hover-box h4, .patient-hover-box h5, .patient-hover-box h6 {
+    margin: 5px 0; /* Reduce margin for titles */
+}
+
+.patient-hover-box img {
+    width: 100px; /* Adjust the image width */
+    border-radius: 50%; /* Circular image */
+    margin-bottom: 10px; /* Space below the image */
+}
+
+.patient-hover-box .details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding-left: 15px; /* Padding for details */
+}
+
+.patient-hover-box .details h4 {
+    font-size: 1.5em; /* Adjusted font size */
+    color: #333; /* Text color */
+}
+
+.patient-hover-box .details h5 {
+    font-size: 1em; /* Adjusted font size */
+    color: #666; /* Text color */
+}
+
+.patient-hover-box .details h6 {
+    font-size: 0.9em; /* Adjusted font size */
+    color: #888; /* Text color */
+}
+
+.patient-hover-box .icons {
+    display: flex;
+    gap: 10px; /* Space between icons */
+    margin-top: 10px; /* Space above icons */
+}
+
+.patient-hover-box .icons i {
+    font-size: 1.2em; /* Icon size */
+    color: #333; /* Icon color */
+}
+
+/* Additional styling for better presentation */
+.patient-hover-box .row {
+    display: flex;
+    align-items: center;
+}
+
+.patient-hover-box .col-1 {
+    flex: 1;
+}
+
+.patient-hover-box .col-6, .patient-hover-box .col-5 {
+    flex: 6;
+    text-align: left;
+}
+.change-role-button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+/* Popup container - can be anything you want */
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+    padding-top: 60px;
+}
+
+ /* Popup Content/Box */
+ .popup-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.footer-compensation {
+    height:60px;
+}
+
+.login-with-google-btn {
+    transition: background-color .3s, box-shadow .3s;
+      
+    padding: 12px 16px 12px 42px;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 0 -1px 0 rgba(0, 0, 0, .04), 0 1px 1px rgba(0, 0, 0, .25);
+    
+    color: #757575;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+    
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTgiIGhlaWdodD0iMTgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj48cGF0aCBkPSJNMTcuNiA5LjJsLS4xLTEuOEg5djMuNGg0LjhDMTMuNiAxMiAxMyAxMyAxMiAxMy42djIuMmgzYTguOCA4LjggMCAwIDAgMi42LTYuNnoiIGZpbGw9IiM0Mjg1RjQiIGZpbGwtcnVsZT0ibm9uemVybyIvPjxwYXRoIGQ9Ik05IDE4YzIuNCAwIDQuNS0uOCA2LTIuMmwtMy0yLjJhNS40IDUuNCAwIDAgMS04LTIuOUgxVjEzYTkgOSAwIDAgMCA4IDV6IiBmaWxsPSIjMzRBODUzIiBmaWxsLXJ1bGU9Im5vbnplcm8iLz48cGF0aCBkPSJNNCAxMC43YTUuNCA1LjQgMCAwIDEgMC0zLjRWNUgxYTkgOSAwIDAgMCAwIDhsMy0yLjN6IiBmaWxsPSIjRkJCQzA1IiBmaWxsLXJ1bGU9Im5vbnplcm8iLz48cGF0aCBkPSJNOSAzLjZjMS4zIDAgMi41LjQgMy40IDEuM0wxNSAyLjNBOSA5IDAgMCAwIDEgNWwzIDIuNGE1LjQgNS40IDAgMCAxIDUtMy43eiIgZmlsbD0iI0VBNDMzNSIgZmlsbC1ydWxlPSJub256ZXJvIi8+PHBhdGggZD0iTTAgMGgxOHYxOEgweiIvPjwvZz48L3N2Zz4=);
+    background-color: white;
+    background-repeat: no-repeat;
+    background-position: 14px 13px;
+    
+    &:hover {
+      box-shadow: 0 -1px 0 rgba(0, 0, 0, .04), 0 2px 4px rgba(0, 0, 0, .25);
+    }
+    
+    &:active {
+      background-color: #eeeeee;
+    }
+    
+    &:focus {
+      outline: none;
+      box-shadow: 
+        0 -1px 0 rgba(0, 0, 0, .04),
+        0 2px 4px rgba(0, 0, 0, .25),
+        0 0 0 3px #c8dafc;
+    }
+    
+    &:disabled {
+      filter: grayscale(100%);
+      background-color: #ebebeb;
+      box-shadow: 0 -1px 0 rgba(0, 0, 0, .04), 0 1px 1px rgba(0, 0, 0, .25);
+      cursor: not-allowed;
+    }
+  }
+
+  .missing-file-img {
+    width: 80px;
+  }
+  .missing-file-text {
+    color: gray;
+  }

@@ -1,0 +1,9 @@
+Flask
+nibabel
+numpy
+Pillow
+requests
+gunicorn
+flask_login
+firebase_admin
+ 
