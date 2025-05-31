@@ -58,7 +58,7 @@ Each Python file corresponds to a deployed Google Cloud Function:
 
 ---
 
-## 🔍 OHIF Viewer 
+## OHIF Viewer 
 
 - Integrated OHIF instance for viewing uploaded DICOM scans
 - Customisable and hosted locally or on Netlify
